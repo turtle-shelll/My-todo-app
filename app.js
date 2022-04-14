@@ -24,7 +24,7 @@ app.get('/about', (req,res)=>{
 app.use('/api/v1/tasks',tasks);
 app.use(notFound);
 app.use(errorHandler);
-const port = 3000
+const port = process.env.PORT || 3000 ;
  
 //const app.get('/api/v1/tasks')           - get all the tasks          
 //const app.post('/api/v1/tasks')          - creat a new tasks 
